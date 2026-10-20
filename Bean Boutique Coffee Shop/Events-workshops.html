@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Events & Workshops</title>
+    <meta name="description" content="Upcoming coffee tastings, brewing classes, and meet-the-roaster events at Bean Boutique.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="site-header">
+  <div class="site-header__bar">
+      <a href="index.html" class="brand">
+      <img src="images/logo.svg" alt="" class="brand__logo" width="36" height="36">
+      <span class="brand__text">
+        <span class="brand__name">Bean Boutique</span>
+        <span class="brand__tagline">now online</span>
+      </span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Coffee_selection.html">Coffee Selection</a></li>
+        <li><a href="Brewing_equipment.html">Brewing Equipment</a></li>
+        <li><a href="Events-workshops.html" aria-current="page">Events & Workshops</a></li>
+        <li><a href="Shopping_cart.html">Shopping Cart</a></li>
+        <li><a href="offers_subscriptions.html">Special Offers</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section wrap">
+    <div class="section-head">
+      <h1>Events & Workshops</h1>
+      <p>Small groups, hands-on, in the shop. Book a place below — first name, last name, and email is all we need.</p>
+    </div>
+
+    <div class="card-grid mb-xl">
+      <article class="card">
+        <div class="card__media">
+          <img src="images/pexels-milivigerova-5984730.jpg" alt="Coffee cups lined up for a cupping session" width="800" height="600" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h2>Saturday Cupping Session</h2>
+          <p class="card__meta">Sat 4 Oct · 10:00–11:00 · Free for subscribers / $12 door</p>
+          <p>Taste four current roasts side by side, guided by our head roaster.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__media card__media--rust">
+           <img src="images/pexels-roopsarkar-35710567.jpg" alt="Barista pouring water over a V60 pour-over dripper" width="800" height="600" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3>Pour-Over Brewing Class</h3>
+          <p class="card__meta">Wed 15 Oct · 18:30–20:00 · $25</p>
+          <p>Learn V60 technique from grind size to pour pattern. Kit included.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__media">
+          <img src="images/pexels-cripsdog-8152492-1.jpg" alt="Coffee roaster checking freshly roasted beans" width="800" height="600" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3>Meet the Roaster</h3>
+          <p class="card__meta">Fri 24 Oct · 19:00–20:30 · $15</p>
+          <p>An evening with our roaster on sourcing, roasting curves, and Q&amp;A.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="split">
+      <div>
+        <h2 class="mb-sm">Reserve a place</h2>
+        <form class="form-grid" action="mailto:hello@beanboutique.co.ke?subject=Event%20booking%20request" method="post" enctype="text/plain">
+  <div class="field">
+    <label for="first-name">First name</label>
+    <input type="text" id="first-name" name="First name" autocomplete="given-name" required>
+  </div>
+  <div class="field">
+    <label for="last-name">Last name</label>
+    <input type="text" id="last-name" name="Last name" autocomplete="family-name" required>
+  </div>
+  <div class="field full">
+    <label for="reg-email">Email address</label>
+    <input type="email" id="reg-email" name="Email" autocomplete="email" required>
+  </div>
+  <div class="field full">
+    <label for="event-choice">Which event?</label>
+    <select id="event-choice" name="Event">
+      <option>Saturday Cupping Session</option>
+      <option>Pour-Over Brewing Class</option>
+      <option>Meet the Roaster</option>
+    </select>
+  </div>
+  <div class="full">
+    <button type="submit" class="btn btn--primary">Book my place</button>
+    <p class="form-note">Your email app will open with your booking request ready to send.</p>
+  </div>
+</form>
+      </div>
+
+      <!-- PLUGIN: interactive map -->
+      <div>
+        <h2 class="mb-sm">Find us</h2>
+        <div class="map-embed">
+          <iframe
+            title="Map showing Bean Boutique's location on Ngong Road, Kilimani, Nairobi"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=36.7800%2C-1.2960%2C36.7900%2C-1.2900&layer=mapnik&marker=-1.2930%2C36.7850"
+            loading="lazy">
+          </iframe>
+        </div>
+        <p class="form-note">Ngong Road, Kilimani, Nairobi, Kenya · P.O. Box 12345-00100, Nairobi</p>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__grid">
+    <div>
+      <h4>Bean Boutique</h4>
+      <address>
+        <p>Ngong Road, Kilimani, Nairobi, Kenya</p>
+        <p>P.O. Box 12345-00100, Nairobi</p>
+        <p>Mon–Fri 7:30–18:00 · Sat–Sun 8:30–17:00 (EAT)</p>
+        <p>hello@beanboutique.co.ke · +254 720 000 000</p>
+      </address>
+
+      <div class="footer-social">
+        <a href="#" aria-label="Bean Boutique on Instagram">IG</a>
+        <a href="#" aria-label="Bean Boutique on Facebook">FB</a>
+        <a href="#" aria-label="Bean Boutique on X">X</a>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="Coffee_selection.html">Coffee Selection</a></li>
+        <li><a href="Brewing_equipment.html">Brewing Equipment</a></li>
+        <li><a href="Events-workshops.html">Events & Workshops</a></li>
+        <li><a href="offers_subscriptions.html">Subscriptions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Stay in the loop</h4>
+      <p>Roasting notes, new blends, and first word on events — no spam, unsubscribe any time.</p>
+      <p class="newsletter-note">For roasting notes and event updates, <a href="mailto:hello@beanboutique.co.ke?subject=Newsletter%20signup">email us to join the list</a>.</p>
+    </div>
+  </div>
+  <div class="site-footer__base">
+    <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

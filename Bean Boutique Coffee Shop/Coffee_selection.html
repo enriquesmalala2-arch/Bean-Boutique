@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee selection</title>
+    <meta name="description" content="Browse Bean Boutique's blends and single-origin coffees, with tasting notes and brew recommendations.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="site-header">
+  <div class="site-header__bar">
+      <a href="index.html" class="brand">
+      <img src="images/logo.svg" alt="" class="brand__logo" width="36" height="36">
+      <span class="brand__text">
+        <span class="brand__name">Bean Boutique</span>
+        <span class="brand__tagline">now online</span>
+      </span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Coffee_selection.html" aria-current="page">Coffee Selection</a></li>
+        <li><a href="Brewing_equipment.html">Brewing Equipment</a></li>
+        <li><a href="Events-workshops.html">Events & Workshops</a></li>
+        <li><a href="Shopping_cart.html">Shopping Cart</a></li>
+        <li><a href="offers_subscriptions.html">Special Offers</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section wrap catalog">
+    <div class="section-head">
+      <h1>Coffee Selection</h1>
+      <p>Our blends and single-origins, roasted in small batches. Choose a category to narrow the selection.</p>
+    </div>
+
+    <!-- PLUG-IN 2: animated text search box -->
+    <div class="search-box" role="search">
+      <label for="coffee-search" class="sr-only">Search coffees</label>
+      <input type="search" id="coffee-search" list="coffee-names" placeholder=" " autocomplete="off">
+      <span class="search-ghost" aria-hidden="true">Search coffees, flavours, brewing…</span>
+      <datalist id="coffee-names">
+        <option value="Mill Lane Blend">
+        <option value="Weekend Filter Blend">
+        <option value="Yirgacheffe, Ethiopia">
+        <option value="Huila, Colombia">
+        <option value="Sumatra Mandheling">
+        <option value="Sunday Decaf">
+      </datalist>
+    </div>
+
+    <!-- PLUG-IN 1: catalogue-style category filter -->
+    <fieldset class="filter-bar">
+      <legend>Filter by category</legend>
+      <input type="radio" name="coffee-filter" id="filter-all" checked>
+      <label class="filter-tag" for="filter-all">All coffees</label>
+      <input type="radio" name="coffee-filter" id="filter-blend">
+      <label class="filter-tag" for="filter-blend">Blends</label>
+      <input type="radio" name="coffee-filter" id="filter-single-origin">
+      <label class="filter-tag" for="filter-single-origin">Single origin</label>
+      <input type="radio" name="coffee-filter" id="filter-decaf">
+      <label class="filter-tag" for="filter-decaf">Decaf</label>
+    </fieldset>
+
+    <div class="card-grid">
+
+      <article class="card" data-product-card data-name="Mill Lane Blend" data-tag="blend">
+        <div class="card__media">
+          <img src="images/pexels-emmanuel-lozano-2162928042-38648015.jpg" alt="Bag of Mill Lane Blend espresso beans" width="800" height="600" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h2>Mill Lane Blend</h2>
+          <p class="card__meta">Blend · chocolate, orange peel, brown sugar</p>
+          <p>Our house espresso, built for milk drinks. Best brewed on an espresso machine or moka pot.</p>
+          <div class="card__actions">
+            <span class="card__price">$12</span>
+            <a class="btn btn--primary" href="Shopping_cart.html?add=mill-lane-blend" aria-label="Add Mill Lane Blend to cart">Add to cart</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product-card data-name="Weekend Filter Blend" data-tag="blend">
+        <div class="card__media">
+          <img src="images/pexels-vitalyagorbachev-11712547.jpg" alt="Bag of Weekend Filter Blend coffee beans" width="800" height="600" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3>Weekend Filter Blend</h3>
+          <p class="card__meta">Blend · red apple, honey, toasted almond</p>
+          <p>A gentler, brighter roast for slow Sunday mornings. Best in a V60 or French press.</p>
+          <div class="card__actions">
+            <span class="card__price">$10.89</span>
+           <a class="btn btn--primary" href="Shopping_cart.html?add=weekend-filter-blend" aria-label="Add Weekend Filter Blend to cart">Add to cart</a>
+
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product-card data-name="Yirgacheffe, Ethiopia" data-tag="single-origin">
+        <div class="card__media card__media--rust">
+          <img src="images/pexels-rodrigo-ortega-2044210904-29317659.jpg" alt="Light roast Yirgacheffe coffee beans from Ethiopia" width="800" height="600" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3>Yirgacheffe, Ethiopia</h3>
+          <p class="card__meta">Single origin · jasmine, bergamot, lemon</p>
+          <p>Washed process, light roast. Shows best through a pour-over — try a V60 or Chemex.</p>
+          <div class="card__actions">
+            <span class="card__price">$12.00</span>
+            <a class="btn btn--primary" href="Shopping_cart.html?add=yirgacheffe-ethiopia" aria-label="Add Yirgacheffe, Ethiopia to cart">Add to cart</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product-card data-name="Huila, Colombia" data-tag="single-origin">
+        <div class="card__media card__media--rust">
+          <img src="images/pexels-alejandro-romero-1827694095-29733422.jpg" alt="Medium roast Huila coffee beans from Colombia" width="800" height="600" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3>Huila, Colombia</h3>
+          <p class="card__meta">Single origin · red grape, caramel, cocoa</p>
+          <p>Medium roast, well-rounded. Works well as espresso or filter — a flexible everyday cup.</p>
+          <div class="card__actions">
+            <span class="card__price">$15.19</span>
+           <a class="btn btn--primary" href="Shopping_cart.html?add=huila-colombia" aria-label="Add Huila, Colombia to cart">Add to cart</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product-card data-name="Sumatra Mandheling" data-tag="single-origin">
+        <div class="card__media card__media--rust">
+           <img src="images/pexels-lucaspalito-22222977.jpg" alt="Dark roast Sumatra Mandheling coffee beans" width="800" height="600" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3>Sumatra Mandheling</h3>
+          <p class="card__meta">Single origin · dark chocolate, cedar, earth</p>
+          <p>Full-bodied and low acidity. A French press or moka pot brings out its weight best.</p>
+          <div class="card__actions">
+            <span class="card__price">$11.00</span>
+            <a class="btn btn--primary" href="Shopping_cart.html?add=sumatra-mandheling" aria-label="Add Sumatra Mandheling to cart">Add to cart</a>
+
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product-card data-name="Sunday Decaf" data-tag="decaf">
+        <div class="card__media">
+          <img src="images/pexels-darina-belonogova-8004552.jpg" alt="Bag of Sunday Decaf coffee beans" width="800" height="600" loading="lazy">
+        </div>
+        <div class="card__body">
+          <h3>Sunday Decaf</h3>
+          <p class="card__meta">Decaf, Swiss water process · caramel, walnut</p>
+          <p>All the flavour, none of the 2am. Good any way you brew it — we like it in a moka pot.</p>
+          <div class="card__actions">
+            <span class="card__price">$10.50</span>
+            <a class="btn btn--primary" href="Shopping_cart.html?add=sunday-decaf" aria-label="Add Sunday Decaf to cart">Add to cart</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__grid">
+    <div>
+      <h4>Bean Boutique</h4>
+      <address>
+        <p>Ngong Road, Kilimani, Nairobi, Kenya</p>
+        <p>P.O. Box 12345-00100, Nairobi</p>
+        <p>Mon–Fri 7:30–18:00 · Sat–Sun 8:30–17:00 (EAT)</p>
+        <p>hello@beanboutique.co.ke · +254 720 000 000</p>
+      </address>
+      <div class="footer-social">
+        <a href="#" aria-label="Bean Boutique on Instagram">IG</a>
+        <a href="#" aria-label="Bean Boutique on Facebook">FB</a>
+        <a href="#" aria-label="Bean Boutique on X">X</a>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="Coffee_selection.html">Coffee Selection</a></li>
+        <li><a href="Brewing_equipment.html">Brewing Equipment</a></li>
+        <li><a href="Events-workshops.html">Events & Workshops</a></li>
+        <li><a href="offers_subscriptions.html">Subscriptions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Stay in the loop</h4>
+      <p>Roasting notes, new blends, and first word on events — no spam, unsubscribe any time.</p>
+      <p class="newsletter-note">For roasting notes and event updates, <a href="mailto:hello@beanboutique.co.ke?subject=Newsletter%20signup">email us to join the list</a>.</p>
+    </div>
+  </div>
+  <div class="site-footer__base">
+    <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
